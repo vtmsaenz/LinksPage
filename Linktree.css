@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff7575, #ffd1d1);
+  /* background-image: url("/Users/valesaenz/Downloads/charlotte-blogs-dupe.jpeg");*/
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+.title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.links {
+    display: block;
+    width: 61%; /* Adjust width as needed */
+    max-width: 300px; /* Optionally, set a max-width */
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff99cc, #ff7575);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+.links:hover{
+    background: linear-gradient(to bottom, #ff80b3, #ffb3ff);
+}
+
+.links:active {
+    transform: scale(0.98);
+}
+
+.links.clicked {
+    background: linear-gradient(to bottom, lavender, rgb(164, 123, 241));
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center; /* Center the buttons within the container */
+   
+}
+@media (max-width: 600px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .links {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
